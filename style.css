@@ -1,0 +1,1117 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: #FCFCFC;
+}
+
+.home {
+  background-image: url(imagens/mybackground3.png);
+}
+
+header {
+    display: flex;
+    padding-bottom: 20px;
+  }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Configuração do ícone de pequena apresentação */
+
+.ML {
+  padding-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.EES {
+  padding-left: 10px;
+  padding-right: 53%;
+  margin-top: 21px;
+  margin-bottom: 0px;
+}
+
+/* Configuração menu de páginas */
+
+.nav1 {
+  position: fixed;
+  display: flex;
+  right: 0px;
+  padding-left: 25px;
+  margin-top: 10px;
+  z-index: 1000;
+}
+
+.link {
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 0 8px #0000005a;
+    margin: 0px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 23px;
+    position: relative;
+    overflow: hidden;
+}
+
+.link-1::before {
+    background-color: red;
+}
+
+.link-2::before {
+    background-color: blue;
+}
+
+.link-3::before {
+    background-color: gold;
+}
+
+.link-4::before {
+    background-color: green;
+}
+
+.link i {
+    transition: .2s;
+}
+
+.link:hover i {
+    color: white;
+    transform: scale(1.2);
+}
+
+.link::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    left: -45px;
+    top: 100%;
+}
+
+.link:hover::before {
+    animation: coloring .5s;
+    left: 0;
+    top: 0;
+}
+
+@keyframes coloring {
+    0% {
+        left: -45px;
+        top: 100%; 
+    }
+    50% {
+        left: 15%;
+        top: -25;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+.link-1 {
+    color: red;
+}
+
+.link-2 {
+    color: blue;
+}
+
+.link-3 {
+    color: gold;
+}
+
+.link-4 {
+    color: green;
+}
+/* Configuração da Apresentação */
+
+#helloworld {
+  border-radius: 100%;
+  width: 400px;
+  height: auto;
+  padding-left: 175px; /*A ideia era deixar em círculo perfeito usando margin-left, mas achei que ficou interrasente em formato irregular*/
+  padding-right: 60px;
+}
+
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 70px;
+}
+
+.nome_digitado {
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.nome_digitado span {
+  position: relative;
+}
+
+.nome_digitado span::before {
+  content: " ";
+  color: white;
+  animation: MyName 8s infinite;
+}
+
+.nome_digitado span::after {
+  content: " ";
+  position: absolute;
+  height: 102%;
+  border-left: 2px solid black;
+  right: -25px;
+  animation: digita .8s infinite, digitando 20s steps(15) infinite;
+  width: calc(100% + 25px);
+  background-color: black;
+}
+
+@keyframes MyName {
+  0%, 50% {
+    content: "Matheus Lima"
+  }
+  51%, 100% {
+    content: "Estudante de Engenharia de Software";
+  }
+}
+
+@keyframes digita{
+  0% {
+    border-left: 2px solid white;
+  }
+}
+
+@keyframes digitando {
+  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+    width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+    width: calc(100% + 25px);
+  }
+  
+}
+
+.descricao {
+  margin-left: -35px;
+  font-size: 20px;
+}
+
+#aboutme {
+ padding-right: 5px;
+}
+
+/* Configuração menu de páginas em ícones */
+
+.nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+#works {
+  padding-right: 45px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+#works:hover {
+  filter: grayscale(0%);
+}
+
+#certificates {
+  padding-right: 53px;
+  padding-top: 18px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+#certificates:hover {
+  filter: grayscale(0%);
+}
+
+#contact {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+#contact:hover {
+  filter: grayscale(0%);
+}
+
+/* Confuguração Projetos */
+
+.scroll-section {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40%;
+  background-color: red;
+  border-radius: 0px 130px 130px 0px;
+  width: 0; /* Initial width */
+  transition: width 1s ease;
+}
+
+.content {
+  color: black;
+  padding-top: 40px;
+  padding-left: 465px;
+}
+
+.p {
+  margin-bottom: 400px;
+  height: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-image: linear-gradient(45deg, #eeeeee, #ffffff);
+}
+
+.container {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  color: black;
+  background-color: black;
+}
+
+.container:hover .flip {
+  transform: rotateY(180deg);
+}
+
+.flip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: .5s;
+}
+
+.frente, .tras, .frentep2, .trasp2, .frentep3, .trasp3, .frentep4, .trasp4, .frentep5, .trasp5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px white;
+  color: white;
+  backface-visibility: hidden;
+}
+
+/* Projeto 1 */
+
+.frente {
+  background-image: url(imagens/OnePiece.jpg);
+  background-size: cover;
+}
+
+.tras {
+  background-image: url(imagens/finalizado.png);
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+/* Projeto 2 */
+
+.frentep2 {
+  background-image: url(imagens/metaverso.jpg);
+  background-size: cover;
+}
+
+.trasp2 {
+  background-image: url(imagens/finalizado.png);
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+/* Projeto 3 */
+
+.frentep3 {
+  background-image: url(imagens/CS50-Scratch.jpg);
+  background-size: cover;
+}
+
+.trasp3 {
+  background-image: url(imagens/finalizado.png);
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+/* Projeto 4 */
+
+.frentep4 {
+  background-image: url(imagens/colaboração.jpg);
+  background-size: cover;
+}
+
+.trasp4 {
+  background-image: url(imagens/EmBreve.png);
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+/* Projeto 5 */
+
+.frentep5 {
+  background-image: url(imagens/AtlasBank.jpg);
+  background-size: cover;
+}
+
+.trasp5 {
+  background-image: url(imagens/idealizado.png);
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+/* Projetos */
+
+.Projeto {
+  margin-top: -30px;
+  margin-right: 0px;
+}
+
+.linkp {
+  box-sizing: border-box;
+}
+
+#linkp {
+  margin-left: 365px;
+  margin-top: 40px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  position: relative;
+  color: red;
+}
+
+#linkp::after {
+  display: flex;
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+#linkp:hover::after {
+  width: 100%;
+}
+
+/* Configuração Habilidades */
+
+@keyframes animation {
+  100% {background-color: red; width: 600px;}
+  50% {background-color: green; width: 300px;}
+  0% {background-color: blue; width: 0px;}
+}
+
+@keyframes girar {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes py {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes eng {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 51%;
+  }
+}
+
+@keyframes fr {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 12%;
+  }
+}
+
+@keyframes jp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 7%;
+  }
+}
+
+#s2 {
+  background-color: black;
+  display: flex;
+}
+
+.container2 {
+  margin-top: 100px;
+  width: 0px;
+  height: 150px;
+  background-color: red;
+  animation-name: animation;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+.content2 {
+  color: black;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-left: 360px;
+}
+
+.digitalcircle {
+  position: absolute;
+  right: 225px;
+  width: 400px;
+  height: 400px;
+  animation: girar 12s linear infinite;
+}
+
+.habilidades {
+  display: flex;
+  margin-top: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Software {
+  position: relative;
+  color: white;
+  width: 500px;
+  padding: 40px;
+  margin-right: 100px;
+  border-radius: 20px;
+  background-color: black;
+  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.533), 0 -5px 5px rgba(255, 255, 255, 0.544);
+}
+
+.Idiomas {
+  color: white;
+  width: 500px;
+  padding: 40px;
+  padding-bottom: 200px;
+  border-radius: 20px;
+  background-color: black;
+  box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.533), 0 -5px 5px rgba(255, 255, 255, 0.544);
+}
+
+.Software ul {
+  position: relative;
+  list-style: none;
+  right: 35px;
+}
+
+.Software ul, li {
+  margin: 20px 0px;
+}
+
+.Software ul {
+  list-style: none;
+}
+
+.Software ul li {
+  margin: 20px 0px;
+}
+
+.Software .nivel {
+  background-color: white;
+  display: block;
+  height: 20px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Idiomas ul {
+  position: relative;
+  list-style: none;
+  right: 35px;
+}
+
+.Idiomas ul, li {
+  margin: 20px 0px;
+}
+
+.Idiomas ul {
+  list-style: none;
+}
+
+.Idiomas ul li {
+  margin: 20px 0px;
+}
+
+.Idiomas .nivel {
+  background-color: white;
+  display: block;
+  height: 20px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+ .nivel > span {
+  height: 20px;
+  background: linear-gradient(to right, #fe4701, #ff0054);
+  position: absolute;
+ }
+
+ .html {
+  width: 50%;
+  animation: html 3s;
+ }
+
+ .css {
+  width: 40%;
+  animation: css 3s;
+ }
+
+ .py {
+  width: 30%;
+  animation: py 3s;
+ }
+
+ .js {
+  width: 20%;
+  animation: js 3s;
+ }
+
+ .sql {
+  width: 20%;
+  animation: sql 3s;
+ }
+
+.eng {
+  width: 51%;
+  animation: eng 3s;
+ }
+
+ .fr {
+  width: 12%;
+  animation: fr 3s;
+ }
+
+ .jp {
+  width: 7%;
+  animation: jp 3s;
+ }
+
+ /* Configuração Cerificados */
+
+ #s3 {
+  margin: 0;
+  margin-top: 150px;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ #s3 h1 {
+  text-align: center;
+  color: red;
+  font-size: 40px;
+ }
+
+ .Certificados, .Certificados2 {
+  display: flex;
+ }
+
+ .Certificado1, .Certificado2, .Certificado3, .Certificado4, .Certificado5, .Certificado6, .Certificado7, .Certificado8 {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 1px 6px white;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  left: 60px;
+ }
+
+.curso, .info {
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+  background-size: cover;
+  position: absolute;
+}
+
+.curso span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info {
+  left: 100%;
+  transition: left 1s;
+}
+
+.info span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info a{
+  color: white;
+  text-decoration: none;
+}
+
+.info a:hover{
+  color: black;
+}
+
+.Certificado1:hover .info {
+  left: 0%;
+}
+
+/* */
+
+.curso2, .info2 {
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+  background-size: cover;
+  position: absolute;
+}
+
+.curso2 span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info2 {
+  left: 100%;
+  transition: left 1s;
+}
+
+.info2 span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info2 a{
+  color: white;
+  text-decoration: none;
+}
+
+.info2 a:hover{
+  color: black;
+}
+
+.Certificado2:hover .info2 {
+  left: 0%;
+}
+
+/* */
+
+.curso3, .info3 {
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+  background-size: cover;
+  position: absolute;
+}
+
+.curso3 span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info3 {
+  left: 100%;
+  transition: left 1s;
+}
+
+.info3 span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info3 a{
+  color: white;
+  text-decoration: none;
+}
+
+.info3 a:hover{
+  color: black;
+}
+
+.Certificado3:hover .info3 {
+  left: 0%;
+}
+
+/* */
+
+.curso4, .info4 {
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+  background-size: cover;
+  position: absolute;
+}
+
+.curso4 span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info4 {
+  left: 100%;
+  transition: left 1s;
+}
+
+.info4 span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info4 a{
+  color: white;
+  text-decoration: none;
+}
+
+.info4 a:hover{
+  color: black;
+}
+
+.Certificado4:hover .info4 {
+  left: 0%;
+}
+
+/* */
+
+.curso5, .info5 {
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+  background-size: cover;
+  position: absolute;
+}
+
+.curso5 span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info5 {
+  left: 100%;
+  transition: left 1s;
+}
+
+.info5 span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info5 a{
+  color: white;
+  text-decoration: none;
+}
+
+.info5 a:hover{
+  color: black;
+}
+
+.Certificado5:hover .info5 {
+  left: 0%;
+}
+
+/* */
+
+.curso6, .info6 {
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+  background-size: cover;
+  position: absolute;
+}
+
+.curso6 span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info6 {
+  left: 100%;
+  transition: left 1s;
+}
+
+.info6 span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info6 a{
+  color: white;
+  text-decoration: none;
+}
+
+.info6 a:hover{
+  color: black;
+}
+
+.Certificado6:hover .info6 {
+  left: 0%;
+}
+
+/* */
+
+.curso7, .info7 {
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+  background-size: cover;
+  position: absolute;
+}
+
+.curso7 span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info7 {
+  left: 100%;
+  transition: left 1s;
+}
+
+.info7 span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info7 a{
+  color: white;
+  text-decoration: none;
+}
+
+.info7 a:hover{
+  color: black;
+}
+
+.Certificado7:hover .info7 {
+  left: 0%;
+}
+
+/* */
+
+.curso8, .info8 {
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+  background-size: cover;
+  position: absolute;
+}
+
+.curso8 span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info8 {
+  left: 100%;
+  transition: left 1s;
+}
+
+.info8 span {
+  padding: 10px;
+  background-color: red;
+}
+
+.info8 a{
+  color: white;
+  text-decoration: none;
+}
+
+.info8 a:hover{
+  color: black;
+}
+
+.Certificado8:hover .info8 {
+  left: 0%;
+}
+
+/* Configuração de Contatos */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+@keyframes degrade {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+#s4 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dados {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.contato {
+  font-size: 40px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #FF0000, #00FF48, #F60000 ,#FF2D00);
+  background-size: 400% 100%;
+
+  animation: degrade 10s linear infinite alternate;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dados1 {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dados1 ul {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+  gap: 40px;
+}
+
+.dados1 ul li{
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  box-shadow: 0px 8px 25px #00000055;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: .2s;
+}
+
+.dados1 ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.dados1 ul li span {
+  position: absolute;
+}
+
+.dados1 ul li:hover {
+  width: 180px;
+}
+
+.dados1 ul li .icon {
+  color: #ccc;
+  font-size: 2.2em;
+  transition: .2s;
+}
+
+.dados1 ul li .text {
+  color: white;
+  font-size: 18px;
+  transform: scale(0);
+  transition: .2s;
+  transition-delay: .1s;
+}
+
+.dados1 ul li:hover .text {
+  transform: scale(1);
+}
+
+.dados1 ul li:hover .icon {
+  transform: scale(0);
+}
+
+.dados1 ul li::before {
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+  inset: 0;
+  opacity: 0;
+  border-radius: 60px;
+}
+
+.dados1 ul li:hover::before {
+  opacity: 1;
+}
