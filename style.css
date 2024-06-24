@@ -2,14 +2,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat;
   color: #FCFCFC;
 }
 
 .home {
   background-image: url(imagens/mybackground3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header {
