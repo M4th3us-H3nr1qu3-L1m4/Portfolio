@@ -422,9 +422,9 @@ img {
 /* Configuração Habilidades */
 
 @keyframes animation {
-  100% {background-color: red; width: 600px;}
-  50% {background-color: green; width: 300px;}
-  0% {background-color: blue; width: 0px;}
+  100% {background-color: white; width: 600px;}
+  50% {background-color: white; width: 300px;}
+  0% {background-color: white; width: 0px;}
 }
 
 @keyframes girar {
@@ -517,7 +517,6 @@ img {
   margin-top: 100px;
   width: 0px;
   height: 150px;
-  background-color: red;
   animation-name: animation;
   animation-duration: 4s;
   animation-delay: 1s;
