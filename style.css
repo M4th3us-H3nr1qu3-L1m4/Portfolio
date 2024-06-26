@@ -263,8 +263,7 @@ img {
   top: 0;
   left: 0;
   height: 40%;
-  background-color: red;
-  border-radius: 0px 130px 130px 0px;
+  background-color: white;
   width: 0; /* Initial width */
   transition: width 1s ease;
 }
