@@ -403,12 +403,15 @@ img {
   color: red;
 }
 
+#linkp:hover {
+  color: red;
+}
+
 #linkp::after {
   display: flex;
   content: " ";
   width: 0%;
   height: 2px;
-  background-color: red;
   position: absolute;
   bottom: 0;
   left: 0;
