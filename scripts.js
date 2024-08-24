@@ -11,3 +11,19 @@ window.addEventListener('scroll', function() {
     // Definir a largura do elemento de fundo
     document.querySelector('.background').style.width = width + 'px';
 });
+
+function vermais() {
+    var vm=document.getElementById("vm");
+    var vermais=document.getElementById("vermais");
+    var btnvermais=document.getElementById("btnvermais");
+
+    if(vm.style.display === "none") {
+        vm.style.display = "inline";
+        vermais.style.display = "none";
+        btnvermais.innerHTML = "Ver Mais";
+    }else{
+        vm.style.display = "none";
+        vermais.style.display = "inline";
+        btnvermais.innerHTML = "Ver Menos";
+    }
+}
