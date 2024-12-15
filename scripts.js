@@ -20,10 +20,10 @@ function vermais() {
     if(vm.style.display === "none") {
         vm.style.display = "inline";
         vermais.style.display = "none";
-        btnvermais.innerHTML = "Ver Mais";
+        btnvermais.innerHTML = "Show more";
     }else{
         vm.style.display = "none";
         vermais.style.display = "inline";
-        btnvermais.innerHTML = "Ver Menos";
+        btnvermais.innerHTML = "Show less";
     }
 }
