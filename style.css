@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  color: #FCFCFC;
+  color: #D5D5D4;
 }
 
 .home {
@@ -23,11 +23,19 @@ img {
 
 /* Configuração do ícone de pequena apresentação */
 
+#coffee-cup-icon {
+  filter: grayscale(100%);
+}
+
 .ML {
   padding-left: 10px;
   margin-top: 15px;
   margin-bottom: 0px;
-  color: yellow;
+  color: #454344;
+}
+
+.ML:hover {
+  color: yellowgreen;
 }
 
 .EES {
@@ -63,19 +71,19 @@ img {
 }
 
 .link-1::before {
-    background-color: yellow;
+    background-color: #454344;
 }
 
 .link-2::before {
-    background-color: yellow;
+    background-color: #454344;
 }
 
 .link-3::before {
-    background-color: gold;
+    background-color: #454344;
 }
 
 .link-4::before {
-    background-color: yellow;
+    background-color: #454344;
 }
 
 .link i {
@@ -85,6 +93,10 @@ img {
 .link:hover i {
     color: black;
     transform: scale(1.2);
+}
+
+.link:active i {
+  color: yellowgreen;
 }
 
 .link::before{
@@ -119,19 +131,19 @@ img {
 }
 
 .link-1 {
-    color: white;
+    color: #D5D5D4;
 }
 
 .link-2 {
-    color: white;
+    color: #D5D5D4;
 }
 
 .link-3 {
-    color: gold;
+    color: #D5D5D4;
 }
 
 .link-4 {
-    color: white;
+    color: #D5D5D4;
 }
 /* Configuração da Apresentação */
 
@@ -141,6 +153,11 @@ img {
   height: auto;
   padding-left: 175px; /*A ideia era deixar em círculo perfeito usando margin-left, mas achei que ficou interrasente em formato irregular*/
   padding-right: 60px;
+  filter: grayscale(100%);
+}
+
+#helloworld:hover {
+  filter: grayscale(0%);
 }
 
 .conteudo {
@@ -162,7 +179,7 @@ img {
 
 .nome_digitado span::before {
   content: " ";
-  color: yellow;
+  color: #454344;
   animation: MyName 8s infinite;
 }
 
@@ -182,13 +199,13 @@ img {
     content: "Matheus Lima";
   }
   51%, 100% {
-    content: "Estudante de Engenharia de Software";
+    content: "Software Developer";
   }
 }
 
 @keyframes digita{
   0% {
-    border-left: 2px solid white;
+    border-left: 2px solid #D5D5D4;
   }
 }
 
@@ -264,7 +281,7 @@ img {
   top: 0;
   left: 0;
   height: 40%;
-  background-color: yellow;
+  background-color: #454344;
   width: 0; /* Initial width */
   transition: width 1s ease;
 }
@@ -327,7 +344,7 @@ img {
 }
 
 .tras {
-  background-image: url(imagens/finalizado.png);
+  background-image: url(imagens/OnePiece\ -\ grey\ accomplished.jpg);
   background-size: cover;
   transform: rotateY(180deg);
 }
@@ -340,7 +357,7 @@ img {
 }
 
 .trasp2 {
-  background-image: url(imagens/finalizado.png);
+  background-image: url(imagens/metaverso\ grey\ accomplished.jpg);
   background-size: cover;
   transform: rotateY(180deg);
 }
@@ -367,8 +384,8 @@ button {
 }
 
 button:hover {
-  border-color: yellow;
-  color: yellow;
+  border-color: yellowgreen;
+  color: yellowgreen;
 }
 
 .frentep3 {
@@ -377,7 +394,7 @@ button:hover {
 }
 
 .trasp3 {
-  background-image: url(imagens/finalizado.png);
+  background-image: url(imagens/CS50-Scratch\ grey\ accomplished.jpg);
   background-size: cover;
   transform: rotateY(180deg);
 }
@@ -390,7 +407,7 @@ button:hover {
 }
 
 .trasp4 {
-  background-image: url(imagens/EmBreve.png);
+  background-image: url(imagens/colaboração\ grey\ soon.jpg);
   background-size: cover;
   transform: rotateY(180deg);
 }
@@ -403,7 +420,7 @@ button:hover {
 }
 
 .trasp5 {
-  background-image: url(imagens/idealizado.png);
+  background-image: url(imagens/AtlasBank\ in\ conception.jpg);
   background-size: cover;
   transform: rotateY(180deg);
 }
@@ -429,7 +446,7 @@ button:hover {
 }
 
 #linkp:hover {
-  color: yellow;
+  color: yellowgreen;
 }
 
 #linkp::after {
@@ -437,7 +454,7 @@ button:hover {
   content: " ";
   width: 0%;
   height: 2px;
-  background-color: yellow;
+  background-color: yellowgreen;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -451,9 +468,9 @@ button:hover {
 /* Configuração Habilidades */
 
 @keyframes animation {
-  100% {background-color: yellow; width: 600px;}
-  50% {background-color: yellow; width: 300px;}
-  0% {background-color: yellow; width: 0px;}
+  100% {background-color: #454344; width: 600px;}
+  50% {background-color: #454344; width: 300px;}
+  0% {background-color: #454344; width: 0px;}
 }
 
 @keyframes girar {
@@ -479,7 +496,7 @@ button:hover {
     width: 0%;
   }
   100% {
-    width: 40%;
+    width: 45%;
   }
 }
 
@@ -650,7 +667,7 @@ button:hover {
 
  .nivel > span {
   height: 20px;
-  background: linear-gradient(to right, #fe4701, yellow);
+  background: linear-gradient(to right, rgba(165, 42, 42, 0.893), #454344, rgba(0, 0, 0, 0.877));
   position: absolute;
  }
 
@@ -660,7 +677,7 @@ button:hover {
  }
 
  .css {
-  width: 40%;
+  width: 45%;
   animation: css 3s;
  }
 
@@ -705,7 +722,7 @@ button:hover {
 
  #s3 h1 {
   text-align: center;
-  color: white;
+  color: #D5D5D4;
   font-size: 40px;
  }
 
@@ -737,7 +754,7 @@ button:hover {
 
 .curso span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info {
@@ -747,7 +764,7 @@ button:hover {
 
 .info span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info a{
@@ -756,7 +773,7 @@ button:hover {
 }
 
 .info a:hover{
-  color: black;
+  color: #F7524F;
 }
 
 .Certificado1:hover .info {
@@ -775,7 +792,7 @@ button:hover {
 
 .curso2 span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info2 {
@@ -785,7 +802,7 @@ button:hover {
 
 .info2 span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info2 a{
@@ -794,7 +811,7 @@ button:hover {
 }
 
 .info2 a:hover{
-  color: black;
+  color: #F7524F;
 }
 
 .Certificado2:hover .info2 {
@@ -813,7 +830,7 @@ button:hover {
 
 .curso3 span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info3 {
@@ -823,7 +840,7 @@ button:hover {
 
 .info3 span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info3 a{
@@ -832,7 +849,7 @@ button:hover {
 }
 
 .info3 a:hover{
-  color: black;
+  color: #F7524F;
 }
 
 .Certificado3:hover .info3 {
@@ -851,7 +868,7 @@ button:hover {
 
 .curso4 span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info4 {
@@ -861,7 +878,7 @@ button:hover {
 
 .info4 span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info4 a{
@@ -870,7 +887,7 @@ button:hover {
 }
 
 .info4 a:hover{
-  color: black;
+  color: #F7524F;
 }
 
 .Certificado4:hover .info4 {
@@ -889,7 +906,7 @@ button:hover {
 
 .curso5 span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info5 {
@@ -899,7 +916,7 @@ button:hover {
 
 .info5 span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info5 a{
@@ -908,7 +925,7 @@ button:hover {
 }
 
 .info5 a:hover{
-  color: black;
+  color: #F7524F;
 }
 
 .Certificado5:hover .info5 {
@@ -927,7 +944,7 @@ button:hover {
 
 .curso6 span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info6 {
@@ -937,7 +954,7 @@ button:hover {
 
 .info6 span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info6 a{
@@ -946,7 +963,7 @@ button:hover {
 }
 
 .info6 a:hover{
-  color: black;
+  color: #F7524F;
 }
 
 .Certificado6:hover .info6 {
@@ -965,7 +982,7 @@ button:hover {
 
 .curso7 span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info7 {
@@ -975,7 +992,7 @@ button:hover {
 
 .info7 span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info7 a{
@@ -984,7 +1001,7 @@ button:hover {
 }
 
 .info7 a:hover{
-  color: black;
+  color: #F7524F;
 }
 
 .Certificado7:hover .info7 {
@@ -1003,7 +1020,7 @@ button:hover {
 
 .curso8 span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info8 {
@@ -1013,7 +1030,7 @@ button:hover {
 
 .info8 span {
   padding: 10px;
-  background-color: red;
+  background-color: #454344;
 }
 
 .info8 a{
@@ -1022,7 +1039,7 @@ button:hover {
 }
 
 .info8 a:hover{
-  color: black;
+  color: #F7524F;
 }
 
 .Certificado8:hover .info8 {
@@ -1141,4 +1158,3 @@ button:hover {
 .dados1 ul li:hover::before {
   opacity: 1;
 }
-
